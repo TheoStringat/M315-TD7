@@ -1,19 +1,19 @@
 package Jeu;
 
-
-/**
-* @generated
-*/
 public class Elfe extends Personnage {
-    private String valeur_acuite;
+    private String valeurAcuite;
     
-
-    private String getValeur_acuite() {
-        return this.valeur_acuite;
+    public Elfe(String nom, String valeur_acuite) {
+    	super(nom);
+    	this.valeurAcuite = valeurAcuite;
     }
 
-    private String setValeur_acuite(String valeur_acuite) {
-        this.valeur_acuite = valeur_acuite;
+    public String getValeurAcuite() {
+        return this.valeurAcuite;
+    }
+
+    public void setValeurAcuite(String valeurAcuite) {
+        this.valeurAcuite = valeurAcuite;
     }
     
     

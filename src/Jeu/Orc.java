@@ -3,15 +3,19 @@ package Jeu;
 
 
 public class Orc extends Personnage {
-    private Integer quotient_fureur;
+    private int quotientFureur;
 
-
-    private Integer getQuotient_fureur() {
-        return this.quotient_fureur;
+    public Orc(String nom, String valeur_acuite) {
+    	super(nom);
+    	this.quotientFureur = quotientFureur;
     }
 
-    private Integer setQuotient_fureur(Integer quotient_fureur) {
-        this.quotient_fureur = quotient_fureur;
+    public int getQuotient_fureur() {
+        return this.quotientFureur;
+    }
+
+    public void setQuotient_fureur(int quotientFureur) {
+        this.quotientFureur = quotientFureur;
     }
     
     

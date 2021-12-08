@@ -2,27 +2,27 @@ package Jeu;
 
 
 public class Arme {
-    private Integer force;
-    private Integer protection;
+    private int force;
+    private int protection;
 
     public Arme(int force, int protection){
         this.force = force;
         this.protection = protection;
     }
 
-    private Integer getForce() {
+    public int getForce() {
         return this.force;
     }
 
-    private Integer setForce(Integer force) {
+    public void setForce(int force) {
         this.force = force;
     }
 
-    private Integer getProtection() {
+    public int getProtection() {
         return this.protection;
     }
 
-    private Integer setProtection(Integer protection) {
+    public void setProtection(int protection) {
         this.protection = protection;
     }
     
