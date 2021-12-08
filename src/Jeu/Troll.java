@@ -2,15 +2,19 @@ package Jeu;
 
 
 public class Troll extends Personnage {
-    private String capacite_regeneration;
-    
+    private String capaciteRegeneration;
 
-    private String getCapacite_regeneration() {
-        return this.capacite_regeneration;
+    public Troll(String nom, String capaciteRegeneration) {
+    	super(nom);
+    	this.capaciteRegeneration = capaciteRegeneration;
+    }
+    
+    public String capaciteRegeneration() {
+        return this.capaciteRegeneration;
     }
 
-    private String setCapacite_regeneration(String capacite_regeneration) {
-        this.capacite_regeneration = capacite_regeneration;
+    public void capaciteRegeneration(String capaciteRegeneration) {
+        this.capaciteRegeneration = capaciteRegeneration;
     }
     
     
