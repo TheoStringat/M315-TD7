@@ -8,6 +8,7 @@ public class Orc extends Personnage {
     public Orc(String nom, String valeur_acuite) {
     	super(nom);
     	this.quotientFureur = quotientFureur;
+    	this.setArmeActive(new Epee());
     }
 
     public int getQuotient_fureur() {

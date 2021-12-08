@@ -13,19 +13,19 @@ public class Personnage {
         this.vitalite = 100;
     }
 
-    private String getNom() {
+    public String getNom() {
         return this.nom;
     }
 
-    private void setNom(String nom) {
+    public void setNom(String nom) {
         this.nom = nom;
     }
 
-    private Integer getVitalite() {
+    public Integer getVitalite() {
         return this.vitalite;
     }
 
-    private void setVitalite(Integer vitalite) {
+    public void setVitalite(Integer vitalite) {
         this.vitalite = vitalite;
     }
 
@@ -71,7 +71,7 @@ public class Personnage {
             p.setVitalite(p.getVitalite() - pvPerdu);
             System.out.println(p.getNom() + " a perdu " + pvPerdu + " de vitalite.");
         } else{
-        	System.out.println(p.getNom() + " n' pas perdu de vie, le coup est inefficace.");
+        	System.out.println(p.getNom() + " n'a pas perdu de vie, le coup est inefficace.");
         }
     }
     

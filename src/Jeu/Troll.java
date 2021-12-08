@@ -7,6 +7,7 @@ public class Troll extends Personnage {
     public Troll(String nom, String capaciteRegeneration) {
     	super(nom);
     	this.capaciteRegeneration = capaciteRegeneration;
+    	this.setArmeActive(new Dague());
     }
     
     public String capaciteRegeneration() {
