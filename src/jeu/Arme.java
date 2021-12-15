@@ -1,4 +1,4 @@
-package Jeu;
+package jeu;
 
 
 public class Arme {
@@ -6,15 +6,16 @@ public class Arme {
     private int protection;
     private String nom;
 
-    public Arme(int force, int protection){
-        this.force = force;
-        this.protection = protection;
-    }
-    
     public Arme(int force, int protection, String nom){
         this.force = force;
         this.protection = protection;
         this.nom = nom;
+    }
+    
+    public Arme(int force, int protection){
+        this.force = force;
+        this.protection = protection;
+        this.setNom("");
     }
 
     public int getForce() {
@@ -32,13 +33,14 @@ public class Arme {
     public void setProtection(int protection) {
         this.protection = protection;
     }
+
+	public String getNom() {
+		return nom;
+	}
+
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
     
-    public String getNom() {
-    	return this.nom;
-    }
-    
-    public void setNom(String nom) {
-    	this.nom = nom;
-    }
     
 }

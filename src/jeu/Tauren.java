@@ -1,8 +1,14 @@
-package Jeu;
+package jeu;
 
 
 public class Tauren extends Personnage {
     private int musculation;
+    
+    public Tauren(String nom, int musculation, Arme arme) {
+    	super(nom);
+    	this.musculation = musculation;
+    	this.setArmeActive(arme);
+    }
     
     public Tauren(String nom, int musculation) {
     	super(nom);

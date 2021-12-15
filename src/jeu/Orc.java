@@ -1,11 +1,17 @@
-package Jeu;
+package jeu;
 
 
 
 public class Orc extends Personnage {
     private int quotientFureur;
 
-    public Orc(String nom, String valeur_acuite) {
+    public Orc(String nom, int quotientFureur, Arme arme) {
+    	super(nom);
+    	this.quotientFureur = quotientFureur;
+    	this.setArmeActive(arme);
+    }
+    
+    public Orc(String nom, int quotientFureur) {
     	super(nom);
     	this.quotientFureur = quotientFureur;
     	this.setArmeActive(new Epee());

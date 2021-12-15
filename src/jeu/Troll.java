@@ -1,9 +1,14 @@
-package Jeu;
-
+package jeu;
 
 public class Troll extends Personnage {
     private String capaciteRegeneration;
 
+    public Troll(String nom, String capaciteRegeneration, Arme arme) {
+    	super(nom);
+    	this.capaciteRegeneration = capaciteRegeneration;
+    	this.setArmeActive(arme);
+    }
+    
     public Troll(String nom, String capaciteRegeneration) {
     	super(nom);
     	this.capaciteRegeneration = capaciteRegeneration;
