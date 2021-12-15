@@ -31,5 +31,7 @@ public class Main {
 
 		Personnage azag = new Orc("Azag", 5);
 		assertTrue(azag.getArmeActive() instanceof Epee);
+		
+		azag.ramasserArme(w);
 	}
 }

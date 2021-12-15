@@ -1,7 +1,5 @@
 package jeu;
 
-
-
 public class Orc extends Personnage {
     private int quotientFureur;
 

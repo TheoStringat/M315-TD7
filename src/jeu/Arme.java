@@ -2,9 +2,9 @@ package jeu;
 
 
 public class Arme {
-    private int force;
-    private int protection;
-    private String nom;
+	protected int force;
+    protected int protection;
+    protected String nom;
 
     public Arme(int force, int protection, String nom){
         this.force = force;
@@ -27,7 +27,7 @@ public class Arme {
     }
 
     public int getProtection() {
-        return this.protection;
+    	return this.protection;
     }
 
     public void setProtection(int protection) {
